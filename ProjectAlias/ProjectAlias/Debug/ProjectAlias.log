@@ -1,0 +1,13 @@
+﻿Build started 11/8/2015 11:10:38 PM.
+     1>Project "C:\Users\JimClark\Documents\GitHub\ProjectAlias\ProjectAlias\ProjectAlias\ProjectAlias.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Source\Utility\PA_algo.c
+         PA_algo.c
+     1>c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_algo.c(24): error C2143: syntax error : missing ';' before 'type'
+     1>c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_algo.c(45): error C2143: syntax error : missing ';' before 'type'
+     1>c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_algo.c(64): error C2143: syntax error : missing ';' before 'type'
+     1>Done Building Project "C:\Users\JimClark\Documents\GitHub\ProjectAlias\ProjectAlias\ProjectAlias\ProjectAlias.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.30

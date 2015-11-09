@@ -18,9 +18,15 @@
     <ClCompile Include="Source\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Utility\PA_algo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes\Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\PA_algo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
