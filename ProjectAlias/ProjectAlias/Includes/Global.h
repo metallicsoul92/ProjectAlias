@@ -9,7 +9,8 @@
 #include <time.h>
 #include <memory.h>
 // user-created header files
-
+#include "../Includes/PA_algo.h"
+#include "../Includes/PA_util.h"
 
 
 #endif GLOBAL_H_

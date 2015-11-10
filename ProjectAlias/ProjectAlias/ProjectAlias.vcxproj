@@ -79,10 +79,12 @@
   <ItemGroup>
     <ClCompile Include="Source\main.c" />
     <ClCompile Include="Source\Utility\PA_algo.c" />
+    <ClCompile Include="Source\Utility\PA_util.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes\Global.h" />
     <ClInclude Include="Includes\PA_algo.h" />
+    <ClInclude Include="Includes\PA_util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
