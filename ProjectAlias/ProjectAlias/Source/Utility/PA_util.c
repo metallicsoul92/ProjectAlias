@@ -27,9 +27,38 @@ const char *PA_UTIL_PlatformToString(platform p)
 
 	default:
 		return "Unknown OS Error";
-
 	}
 
 
 
 }
+
+endianess PA_UTIL_detectEndianness()
+{
+	unsigned int x = 0x76543210;
+	char *c = (char*)&x;
+	if (*c == 0x10)
+	{
+		return LITTLE_ENDIAN;
+	}
+	else
+	{
+		return BIG_ENDIAN;
+	}
+}
+
+const char* PA_UTIL_EndianessToString(endianess e)
+{
+	switch (e)
+	{
+	case BIG_ENDIAN:
+		return "BIG_ENDIAN";
+		break;
+	case LITTLE_ENDIAN:
+		return "LITTLE_ENDIAN";
+		break;
+	default:
+		return "UNKNOWN ENDIAN!";
+		break;
+	}
+} 

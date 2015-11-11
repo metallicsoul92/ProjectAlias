@@ -19,6 +19,7 @@ int main(void)
 	float *temp2p;
 	temp2p = &temp2;
 
+
 	printf("Float passing through void passing through float :) %2.3f", *temp2p);
 
 	
