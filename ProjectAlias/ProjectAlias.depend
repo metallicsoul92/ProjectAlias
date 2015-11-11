@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1447203870 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
+	"../Includes/Global.h"
+
+1447202750 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	<memory.h>
+	"../Includes/PA_algo.h"
+	"../Includes/PA_util.h"
+
+1447204454 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_algo.h
+	<stddef.h>
+
+1447204541 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_util.h
+
+1447203870 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_algo.c
+	"../../Includes/PA_algo.h"
+	"../../Includes/Global.h"
+
+1447204523 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
+	"../../Includes/PA_util.h"
+

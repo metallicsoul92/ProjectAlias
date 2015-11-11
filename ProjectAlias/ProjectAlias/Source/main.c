@@ -8,23 +8,24 @@ int main(void)
 	a = 5;
 	b = 9;
 	printf("Before  the swaps: \n");
-	printf("a = %d, b = %d",a,b);
+	printf("a = %d, b = %d \n",a,b);
 	PA_ALGO_SwapXOR(&a, &b, sizeof(int));
 	printf("After  the swaps: \n");
-	printf("a = %d, b = %d", a, b);
+	printf("a = %d, b = %d \n", a, b);
 
-	printf("%s", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
+	printf("%s \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
+    printf("Endianess %s \n",PA_UTIL_EndianessToString(PA_UTIL_detectEndianness()));
 
 	float temp2 = 15.15f;
 	float *temp2p;
 	temp2p = &temp2;
 
 
-	printf("Float passing through void passing through float :) %2.3f", *temp2p);
+	printf("Float passing through void passing through float :) %2.3f\n", *temp2p);
 
-	
+
 	getchar();
-	
+
 
 	return 0;
 }

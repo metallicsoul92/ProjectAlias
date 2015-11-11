@@ -3,7 +3,7 @@
 
 /*Include all typedefines up here*/
 typedef enum Platform{ OS_WIN, OS_LINUX, OS_MAC} platform;
-typedef enum Endianess{ BIG_ENDIAN, LITTLE_ENDIAN} endianess;
+typedef enum Endianess{ BIG_END, LITTLE_END} endianess;
 
 
 

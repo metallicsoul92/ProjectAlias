@@ -8,7 +8,7 @@ platform PA_UTIL_detectPlatform()
 #if defined(__APPLE__) || defined(__MACH__)
 	return OS_MAC;
 #endif
-#if defined(__linux__) 
+#if defined(__linux__)
 	return OS_LINUX;
 #endif
 }
@@ -39,11 +39,11 @@ endianess PA_UTIL_detectEndianness()
 	char *c = (char*)&x;
 	if (*c == 0x10)
 	{
-		return LITTLE_ENDIAN;
+		return LITTLE_END;
 	}
 	else
 	{
-		return BIG_ENDIAN;
+		return BIG_END;
 	}
 }
 
@@ -51,14 +51,14 @@ const char* PA_UTIL_EndianessToString(endianess e)
 {
 	switch (e)
 	{
-	case BIG_ENDIAN:
+	case BIG_END:
 		return "BIG_ENDIAN";
 		break;
-	case LITTLE_ENDIAN:
+	case LITTLE_END:
 		return "LITTLE_ENDIAN";
 		break;
 	default:
 		return "UNKNOWN ENDIAN!";
 		break;
 	}
-} 
+}
