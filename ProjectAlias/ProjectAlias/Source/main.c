@@ -14,6 +14,7 @@ int main(void)
 	printf("a = %d, b = %d \n", a, b);
 
 	printf("%s \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
+	printf("%s \n", PA_UTIL_ArchitectureToString(PA_UTIL_detectArchitecture()));
     printf("Endianess %s \n",PA_UTIL_EndianessToString(PA_UTIL_detectEndianness()));
 
 	float temp2 = 15.15f;

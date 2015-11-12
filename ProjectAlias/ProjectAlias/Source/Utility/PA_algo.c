@@ -1,5 +1,5 @@
 #include "../../Includes/PA_algo.h"
-#include "../../Includes/Global.h"
+
 
 
 
@@ -7,11 +7,11 @@
 void PA_ALGO_swap(void* a, void *b,size_t size)
 {
 	assert(sizeof(a) == sizeof(b));
-	 
+
 	void *temp = malloc(size);
 	memcpy(temp, a, size);
 	memcpy(a, b, size);
-	memcpy(b, temp, size); 
+	memcpy(b, temp, size);
 	free(temp);
 }
 

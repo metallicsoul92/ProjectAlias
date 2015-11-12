@@ -31,6 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ProjectAlias/Includes/Global.h" />
+		<Unit filename="ProjectAlias/Includes/PA_algo.h" />
+		<Unit filename="ProjectAlias/Includes/PA_util.h" />
+		<Unit filename="ProjectAlias/Source/Utility/PA_algo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ProjectAlias/Source/Utility/PA_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ProjectAlias/Source/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
