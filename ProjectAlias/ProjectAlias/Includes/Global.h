@@ -22,6 +22,7 @@
 // user-created header files
 #include "../Includes/PA_algo.h"
 #include "../Includes/PA_util.h"
+#include "../Includes/PA_device.h"
 
 
 #endif GLOBAL_H

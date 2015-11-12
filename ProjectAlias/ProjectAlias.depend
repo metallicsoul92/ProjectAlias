@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1447204705 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
+1447296278 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
 	"../Includes/Global.h"
 
-1447287239 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
+1447296265 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
@@ -13,6 +13,7 @@
 	<netinet/in.h>
 	"../Includes/PA_algo.h"
 	"../Includes/PA_util.h"
+	"../Includes/PA_device.h"
 
 1447287239 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_algo.h
 	"Global.h"
@@ -22,7 +23,7 @@
 1447282538 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_algo.c
 	"../../Includes/PA_algo.h"
 
-1447287200 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
+1447296462 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
 	"../../Includes/PA_util.h"
 
 1447282538 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Net/PA_server.c
@@ -31,4 +32,10 @@
 1447281846 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_server.h
 
 1447281980 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/device.c
+
+1447296132 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/PA_device.c
+	"../../Includes/PA_device.h"
+
+1447296053 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_device.h
+	"Global.h"
 

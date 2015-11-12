@@ -7,6 +7,12 @@ int main(void)
 	int a, b;
 	a = 5;
 	b = 9;
+
+	usrdvc mydevice;
+	initCurrentDevice(&mydevice);
+
+	printf("My Device info: %s",mydevice.StringInfo);
+
 	printf("Before  the swaps: \n");
 	printf("a = %d, b = %d \n",a,b);
 	PA_ALGO_SwapXOR(&a, &b, sizeof(int));

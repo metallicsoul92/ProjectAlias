@@ -3,11 +3,15 @@
 #include "Global.h"
 //User Device
 typedef struct USRDVC{
-    Platform p;
-    Endianess e;
+    platform p;
+    endianess e;
+    architecture a;
     const char* StringInfo;
 
 }usrdvc;
+
+void initCurrentDevice(usrdvc *device);
+void createToString(usrdvc *device);
 
 
 #endif //PA_DEVICE_H_
