@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1447388231 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
+1447537646 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
 	"../Includes/Global.h"
+	"../Includes/PA_threading.h"
 
-1447388128 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
+1447537626 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
@@ -19,6 +20,7 @@
 	"../Includes/PA_util.h"
 	"../Includes/PA_device.h"
 	"../Includes/PA_server.h"
+	"../Includes/PA_threading.h"
 
 1447388136 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_algo.h
 	"Global.h"
@@ -31,10 +33,10 @@
 1447296462 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
 	"../../Includes/PA_util.h"
 
-1447386611 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Net/PA_server.c
+1447535600 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Net/PA_server.c
 	"../../Includes/PA_server.h"
 
-1447386567 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_server.h
+1447535600 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_server.h
 	"Global.h"
 
 1447281980 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/device.c
@@ -45,9 +47,10 @@
 1447296053 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_device.h
 	"Global.h"
 
-1447531024 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_threading.c
+1447537379 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_threading.c
 	"../../Includes/PA_threading.h"
 
-1447531717 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_threading.h
+1447539307 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_threading.h
 	<pthread.h>
+	<windows.h>
 

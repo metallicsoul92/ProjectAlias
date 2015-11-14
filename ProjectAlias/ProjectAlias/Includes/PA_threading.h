@@ -1,6 +1,11 @@
 #ifndef PA_THREADING_H_
 #define PA_THREADING_H_
 
+#if detectPlatform == OS_LINUX
+#define __linux__
+#endif
+
+
 #if defined(__linux__)
     #include <pthread.h>
 #endif
@@ -26,11 +31,11 @@ typedef struct PA_thread{
 
 // Function wrapping
 #if defined(__linux__)
-int *createThread();
+int PA_createThread(pa_thread *thread, pthread_attr_t * attr, void*(*startRoutine)(void *), void *arg);
 
 #endif
 #if defined(_WIN32) || defined(_WIN64)
-void *PA_createThread(pa_thread *thread, LPSECURITY_ATTRIBUTES lpa, size_t stackSize,
+void PA_createThread(pa_thread *thread, LPSECURITY_ATTRIBUTES lpa, size_t stackSize,
 	LPTHREAD_START_ROUTINE startAddress, LPVOID lpParam, DWORD creationFlags, LPDWORD lpthreadId);
 #endif
 

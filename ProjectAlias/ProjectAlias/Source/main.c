@@ -1,6 +1,8 @@
 #include "../Includes/Global.h"
-
-
+#include "../Includes/PA_threading.h"
+void printHello(){
+    printf("Hello World!!");
+}
 
 int main(void)
 {
@@ -9,6 +11,9 @@ int main(void)
 	a = 5;
 	b = 9;
 
+    pa_thread pat;
+
+    PA_createThread(&pat,NULL,&printHello,NULL);
    // s = createServer(9115,0);
 	//usrdvc mydevice;
 	//initCurrentDevice(&mydevice);

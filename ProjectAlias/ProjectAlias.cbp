@@ -36,6 +36,7 @@
 		<Unit filename="ProjectAlias/Includes/PA_device.h" />
 		<Unit filename="ProjectAlias/Includes/PA_observe.h" />
 		<Unit filename="ProjectAlias/Includes/PA_server.h" />
+		<Unit filename="ProjectAlias/Includes/PA_threading.h" />
 		<Unit filename="ProjectAlias/Includes/PA_util.h" />
 		<Unit filename="ProjectAlias/Source/Net/PA_server.c">
 			<Option compilerVar="CC" />
@@ -44,6 +45,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ProjectAlias/Source/Utility/PA_algo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ProjectAlias/Source/Utility/PA_threading.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ProjectAlias/Source/Utility/PA_util.c">
