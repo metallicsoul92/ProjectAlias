@@ -15,6 +15,10 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netdb.h>
+#include <ifaddrs.h>
+#include <unistd.h>
+#include <arpa/inet.h>
 #endif // __linux__
 #if _WIN32
 
@@ -23,6 +27,6 @@
 #include "../Includes/PA_algo.h"
 #include "../Includes/PA_util.h"
 #include "../Includes/PA_device.h"
-
+#include "../Includes/PA_server.h"
 
 #endif GLOBAL_H

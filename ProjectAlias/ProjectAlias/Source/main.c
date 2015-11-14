@@ -4,14 +4,18 @@
 
 int main(void)
 {
+  //  server *s;
 	int a, b;
 	a = 5;
 	b = 9;
 
-	usrdvc mydevice;
-	initCurrentDevice(&mydevice);
+   // s = createServer(9115,0);
+	//usrdvc mydevice;
+	//initCurrentDevice(&mydevice);
 
-	printf("My Device info: %s",mydevice.StringInfo);
+
+	//printf("My Device info: %s",mydevice.StringInfo);
+ //   printf("Server Info: %s", ServerToString(s));
 
 	printf("Before  the swaps: \n");
 	printf("a = %d, b = %d \n",a,b);
