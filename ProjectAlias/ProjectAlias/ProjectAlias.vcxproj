@@ -78,12 +78,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\main.c" />
+    <ClCompile Include="Source\Net\PA_server.c" />
+    <ClCompile Include="Source\System\PA_device.c" />
     <ClCompile Include="Source\Utility\PA_algo.c" />
+    <ClCompile Include="Source\Utility\PA_threading.c" />
     <ClCompile Include="Source\Utility\PA_util.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes\Global.h" />
     <ClInclude Include="Includes\PA_algo.h" />
+    <ClInclude Include="Includes\PA_device.h" />
+    <ClInclude Include="Includes\PA_observe.h" />
+    <ClInclude Include="Includes\PA_server.h" />
+    <ClInclude Include="Includes\PA_threading.h" />
     <ClInclude Include="Includes\PA_util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -6,8 +6,7 @@
 #endif
 
 #if defined(_WIN32) || defined(_WIN64)
-
-    //Include Windows threading library here
+	#include <windows.h>
 
 #endif
 
@@ -16,13 +15,23 @@
 typedef struct PA_thread{
 
 #if defined(__linux__)
-    pthread_t thread;
+    pthread_t threadRef;
 #endif
 #if defined(_WIN32) || defined(_WIN64)
-    //Include Windows threading object here
+	HANDLE threadRef;
+
 #endif
 
 }pa_thread;
 
-#endif // PA_THREADING_H_
+// Function wrapping
+#if defined(__linux__)
+int *createThread();
 
+#endif
+#if defined(_WIN32) || defined(_WIN64)
+void *PA_createThread(pa_thread *thread, LPSECURITY_ATTRIBUTES lpa, size_t stackSize,
+	LPTHREAD_START_ROUTINE startAddress, LPVOID lpParam, DWORD creationFlags, LPDWORD lpthreadId);
+#endif
+
+#endif // PA_THREADING_H_

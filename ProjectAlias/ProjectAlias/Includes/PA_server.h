@@ -7,8 +7,11 @@
 
 typedef struct Server{
 
+#if defined(__linux__)
     struct sockaddr_in m_socketAddress;
-    short m_port;
+#endif //Linux Defined 
+
+	short m_port;
     int m_sockfd;
 }server;
 
