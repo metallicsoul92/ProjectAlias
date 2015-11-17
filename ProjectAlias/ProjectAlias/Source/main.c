@@ -1,7 +1,9 @@
 #include "../Includes/Global.h"
 #include "../Includes/PA_threading.h"
+#include "../Includes/PA_util.h"
+
 void printHello(){
-    printf("Hello World!!");
+    printf("HELLO %s! \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
 }
 
 int main(void)
@@ -13,7 +15,8 @@ int main(void)
 
     pa_thread pat;
 
-    PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
+    PA_createThread(&pat,NULL,printHello,NULL);
+   // PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
    // s = createServer(9115,0);
 	//usrdvc mydevice;
 	//initCurrentDevice(&mydevice);
@@ -28,7 +31,7 @@ int main(void)
 	printf("After  the swaps: \n");
 	printf("a = %d, b = %d \n", a, b);
 
-	printf("%s \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
+	//printf("%s \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
 	printf("%s \n", PA_UTIL_ArchitectureToString(PA_UTIL_detectArchitecture()));
     printf("Endianess %s \n",PA_UTIL_EndianessToString(PA_UTIL_detectEndianness()));
 

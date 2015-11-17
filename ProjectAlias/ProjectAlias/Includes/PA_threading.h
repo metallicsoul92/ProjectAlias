@@ -18,7 +18,7 @@
 typedef struct PA_thread{
 
 #ifdef __linux__
-    pthread_t threadRef;
+    pthread_t* threadRef;
     int rc;
 #endif
 #ifdef __WIN32 || _WIN64
@@ -31,7 +31,7 @@ typedef struct PA_thread{
 
 // Function wrapping
 #ifdef __linux__
-  int PA_createThread(pa_thread *thread, pthread_attr_t * attr, void*(*startRoutine)(void *), void *arg);
+  void PA_createThread(pa_thread *thread, pthread_attr_t * attr, void*(*startRoutine)(void *), void *arg);
 
 #endif
 #ifdef __WIN32 || _WIN64

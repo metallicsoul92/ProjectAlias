@@ -20,14 +20,10 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #endif // __linux__
+
 #if _WIN32
 
 #endif // __WIN32
 // user-created header files
 
-#include "../Includes/PA_algo.h"
-#include "../Includes/PA_util.h"
-#include "../Includes/PA_device.h"
-#include "../Includes/PA_server.h"
-#include "../Includes/PA_threading.h"
 #endif GLOBAL_H
