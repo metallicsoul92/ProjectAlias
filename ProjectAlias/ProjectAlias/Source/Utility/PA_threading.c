@@ -1,8 +1,9 @@
 #include "../../Includes/PA_threading.h"
 #include "../../Includes/Global.h"
-#include <pthread.h>
+
 
 #ifdef __linux__
+#include <pthread.h>
 void PA_createThread(pa_thread *thread, pthread_attr_t * attr, void*(*startRoutine)(void *), void *arg){
 
     thread->rc =  pthread_create(thread->threadRef, attr, startRoutine,arg);

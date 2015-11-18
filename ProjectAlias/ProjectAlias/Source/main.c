@@ -15,8 +15,8 @@ int main(void)
 
     pa_thread pat;
 
-    PA_createThread(&pat,NULL,printHello,NULL);
-   // PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
+//    PA_createThread(&pat,NULL,printHello,NULL);
+   PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
    // s = createServer(9115,0);
 	//usrdvc mydevice;
 	//initCurrentDevice(&mydevice);

@@ -52,11 +52,12 @@
 	<pthread.h>
 	<windows.h>
 
-1447718855 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
+1447724668 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
 	"../Includes/Global.h"
 	"../Includes/PA_threading.h"
+	"../Includes/PA_util.h"
 
-1447540470 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\global.h
+1447724437 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\global.h
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
@@ -69,24 +70,19 @@
 	<ifaddrs.h>
 	<unistd.h>
 	<arpa/inet.h>
-	"../Includes/PA_algo.h"
-	"../Includes/PA_util.h"
-	"../Includes/PA_device.h"
-	"../Includes/PA_server.h"
-	"../Includes/PA_threading.h"
 
 1447287849 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_algo.h
 	"Global.h"
 
 1447531970 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_util.h
 
-1447296673 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_device.h
+1447724437 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_device.h
+	"../Includes/PA_util.h"
+
+1447724437 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_server.h
 	"Global.h"
 
-1447532480 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_server.h
-	"Global.h"
-
-1447718231 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_threading.h
+1447724437 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_threading.h
 	<pthread.h>
 	<windows.h>
 
@@ -96,12 +92,20 @@
 1447287849 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_algo.c
 	"../../Includes/PA_algo.h"
 
-1447717995 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_threading.c
+1447724688 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_threading.c
 	"../../Includes/PA_threading.h"
+	"../../Includes/Global.h"
+	<pthread.h>
 
 1447531970 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_util.c
 	"../../Includes/PA_util.h"
 
 1447715805 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\net\pa_server.c
 	"../../Includes/PA_server.h"
+
+1447811914 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\system\pa_adt.c
+	"../Includes/pa_adt.h"
+	"../Includes/Global.h"
+
+1447811983 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_adt.h
 
