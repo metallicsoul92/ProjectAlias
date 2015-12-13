@@ -10,7 +10,6 @@
 
 #ifdef __WIN32 || _WIN64
 	#include <windows.h>
-
 #endif
 
 
@@ -24,7 +23,6 @@ typedef struct PA_thread{
 #ifdef __WIN32 || _WIN64
 	HANDLE threadRef;
 	DWORD threadId;
-
 #endif
 
 }pa_thread;
@@ -32,7 +30,6 @@ typedef struct PA_thread{
 // Function wrapping
 #ifdef __linux__
   void PA_createThread(pa_thread *thread, pthread_attr_t * attr, void*(*startRoutine)(void *), void *arg);
-
 #endif
 #ifdef __WIN32 || _WIN64
 void PA_createThread(pa_thread *thread, LPSECURITY_ATTRIBUTES lpa, size_t stackSize,

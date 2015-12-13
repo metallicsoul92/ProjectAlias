@@ -1,0 +1,10 @@
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h:30: warning: argument 'integer' of command @param is not found in the argument list of newTuplei(int a, int b)
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h:30: warning: argument 'integer' of command @param is not found in the argument list of newTuplei(int a, int b)
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/pa_adt.c:14: warning: The following parameters of newTuplei(int a, int b) are not documented:
+  parameter 'a'
+  parameter 'b'
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h:30: warning: argument 'integer' of command @param is not found in the argument list of newTuplei(int a, int b)
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h:30: warning: argument 'integer' of command @param is not found in the argument list of newTuplei(int a, int b)
+C:/Users/JimClark/Documents/GitHub/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h:33: warning: The following parameters of newTuplei(int a, int b) are not documented:
+  parameter 'a'
+  parameter 'b'

@@ -16,7 +16,7 @@ void PA_ALGO_swap(void* a, void *b,size_t size)
 }
 
 
-void PA_ALGO_SwapXOR(int* a, int* b, size_t size)
+void PA_ALGO_SwapXOR(int* a, int* b)
 {
 	if (a != b) {
 		*a ^= *b;

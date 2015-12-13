@@ -11,6 +11,9 @@ typedef struct Server{
    // struct sockaddr_in m_socketAddress;
 #endif //Linux Defined
 
+#ifdef __WIN32 || __WIN64
+    SOCKET s;
+#endif
 	short m_port;
     int m_sockfd;
 }server;

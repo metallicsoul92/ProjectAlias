@@ -22,8 +22,15 @@
 #endif // __linux__
 
 #if _WIN32
-
+ #include <windows.h>
+ #include <winsock2.h>
+ #pragma comment(lib,"ws2_32.lib") //Winsock Library
 #endif // __WIN32
 // user-created header files
 
+typedef void* voidptr;
+typedef int* intptr;
+typedef char* charptr;
+typedef void(*functptr)(void);
+typedef unsigned int uint;
 #endif GLOBAL_H

@@ -1,5 +1,9 @@
 #include "../../Includes/PA_util.h"
 
+
+const char *FilesFP  = "././ProjectAlias/Files/";
+
+
 platform PA_UTIL_detectPlatform()
 {
 #if defined(_WIN32) || defined(_WIN64)
@@ -32,6 +36,50 @@ const char *PA_UTIL_PlatformToString(platform p)
 
 
 }
+
+
+void writeHTMLtoFile(char* filename, char *website){
+    char *fullfp = malloc (strlen(FilesFP) + strlen(filename));
+    strcpy(fullfp,FilesFP);
+    strcat(fullfp,filename);
+
+    char *temp = malloc(strlen(website)+ strlen(fullfp)+ 16 );
+    sprintf(temp,"wget -O %s %s",fullfp,website);
+  FILE *web = popen(temp, "w");
+  FILE
+    pclose(web);
+    free(fullfp);
+    free(temp);
+}
+
+char *printFP(){
+    return FilesFP;
+}
+
+void createFile(char *filepath){
+
+    char *fullfp = malloc (strlen(FilesFP) + strlen(filepath));
+    strcpy(fullfp,FilesFP);
+    strcat(fullfp,filepath);
+
+        FILE *file = fopen(fullfp, "ab+");
+
+        free(fullfp);
+    fclose(file);
+
+}
+void writeTextToFile(char *filepath, const char *data){
+    char *fullfp = malloc (strlen(FilesFP) + strlen(filepath));
+    strcpy(fullfp,FilesFP);
+    strcat(fullfp,filepath);
+
+    FILE *file = fopen(fullfp, "a");
+    fprintf(file,"%s\n",data);
+
+        free(fullfp);
+    fclose(file);
+}
+
 
 endianess PA_UTIL_detectEndianness()
 {

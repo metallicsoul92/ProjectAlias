@@ -3,16 +3,16 @@
 
 #include "../Includes/PA_util.h"
 //User Device
-typedef struct USRDVC{
+typedef struct PA_USRDVC{
     platform p;
     endianess e;
     architecture a;
     const char* StringInfo;
 
-}usrdvc;
+}PA_USRDVC;
 
-void initCurrentDevice(usrdvc *device);
-void createToString(usrdvc *device);
+void initCurrentDevice(PA_USRDVC *device);
+void createToString(PA_USRDVC *device);
 
 
 #endif //PA_DEVICE_H_

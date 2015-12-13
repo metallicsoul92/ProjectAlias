@@ -1,6 +1,9 @@
 #include "../Includes/Global.h"
 #include "../Includes/PA_threading.h"
 #include "../Includes/PA_util.h"
+#include "../Includes/PA_adt.h"
+#include "../Deps/curl/include/curl/curl.h"
+
 
 void printHello(){
     printf("HELLO %s! \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
@@ -8,6 +11,41 @@ void printHello(){
 
 int main(void)
 {
+    PA_ADT_tuplei tup;
+    tup = newTuplei(5,4);
+    printf("%d,%d\n",tup.data1,tup.data2);
+    printf("C Version: %li\n",__STDC_VERSION__);
+    printf("FilePath: %s\n ",printFP());
+    createFile("test.txt");
+    writeTextToFile("test2.txt","Hello World!");
+    writeHTMLtoFile("finances.html","http://finance.yahoo.com/stock-center/");
+
+    system("cls");
+
+    for (int x = 0;x <20 ; x++){
+        if(x == 0){
+                for (int y = 0; y< 20; y++){
+            printf("x");
+        }
+        }else if (x != 19){
+        for(int y = 0; y< 20; y++){
+            if(y == 0){
+                printf("x");
+            }else if( y == 19){
+                printf("x\n");
+            }else
+            printf(" ");
+        }
+        }else
+                for (int y = 0; y< 20; y++){
+            printf("x");
+        }
+        }
+
+
+
+
+
   //  server *s;
 	int a, b;
 	a = 5;
@@ -16,7 +54,7 @@ int main(void)
     pa_thread pat;
 
 //    PA_createThread(&pat,NULL,printHello,NULL);
-   PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
+   //PA_createThread(&pat,NULL,sizeof(printHello),(LPTHREAD_START_ROUTINE)printHello,NULL, NULL , &pat.threadId);
    // s = createServer(9115,0);
 	//usrdvc mydevice;
 	//initCurrentDevice(&mydevice);
@@ -32,8 +70,8 @@ int main(void)
 	printf("a = %d, b = %d \n", a, b);
 
 	//printf("%s \n", PA_UTIL_PlatformToString(PA_UTIL_detectPlatform()));
-	printf("%s \n", PA_UTIL_ArchitectureToString(PA_UTIL_detectArchitecture()));
-    printf("Endianess %s \n",PA_UTIL_EndianessToString(PA_UTIL_detectEndianness()));
+	printf("Architecture: %s \n", PA_UTIL_ArchitectureToString(PA_UTIL_detectArchitecture()));
+    printf("Endianess: %s \n",PA_UTIL_EndianessToString(PA_UTIL_detectEndianness()));
 
 	float temp2 = 15.15f;
 	float *temp2p;

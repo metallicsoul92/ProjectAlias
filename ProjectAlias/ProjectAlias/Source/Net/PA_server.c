@@ -18,9 +18,9 @@ server *createServer(short port, int sockfd){
 }
 
 const char* ServerToString(server* serv){
-    const char* port;
-    const char* sockfd;
-    const char* socketaddr;
+     char* port;
+     char* sockfd;
+     char* socketaddr;
 
     sprintf(port, "%d",serv->m_port);
     sprintf(sockfd, "%d",serv->m_sockfd);
