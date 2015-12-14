@@ -6,7 +6,7 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
+			<Target title="Debug_Win">
 				<Option output="bin/Debug/ProjectAlias" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
@@ -18,13 +18,42 @@
 					<Add directory="ProjectAlias/Includes" />
 				</Compiler>
 			</Target>
-			<Target title="Release">
+			<Target title="Release_Win">
 				<Option output="bin/Release/ProjectAlias" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="ProjectAlias/Includes" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug_linux">
+				<Option output="bin/Debug/ProjectAlias" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=c99" />
+					<Add option="-DCURL_STATICLIB" />
+					<Add directory="ProjectAlias/Includes" />
+				</Compiler>
+				<Linker>
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release_linux">
+				<Option output="bin/Release/ProjectAlias" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c99 -pthread" />
 					<Add directory="ProjectAlias/Includes" />
 				</Compiler>
 				<Linker>
@@ -40,12 +69,12 @@
 		</Compiler>
 		<Linker>
 			<Add option="-static" />
-			<Add library="ProjectAlias\Deps\curl\lib64\libz.a" />
-			<Add library="ProjectAlias\Deps\curl\lib64\libssl.a" />
-			<Add library="ProjectAlias\Deps\curl\lib64\libssh2.a" />
-			<Add library="ProjectAlias\Deps\curl\lib64\librtmp.a" />
-			<Add library="ProjectAlias\Deps\curl\lib64\libcurl.a" />
-			<Add library="ProjectAlias\Deps\curl\lib64\libcrypto.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/libz.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/libssl.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/libssh2.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/librtmp.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/libcurl.a" />
+			<Add library="ProjectAlias/Deps/curl/lib64/libcrypto.a" />
 			<Add directory="ProjectAlias/Deps/curl-7.40.0-devel-mingw64/lib64" />
 		</Linker>
 		<Unit filename="ProjectAlias/Deps/curl/include/config-win32.h" />

@@ -1,7 +1,7 @@
 #include "../Includes/Global.h"
 #include "../Includes/PA_threading.h"
 #include "../Includes/PA_util.h"
-#include "../Includes/PA_adt.h"
+#include "../Includes/pa_adt.h"
 #include "../Deps/curl/include/curl/curl.h"
 
 
@@ -20,8 +20,13 @@ int main(void)
     writeTextToFile("test2.txt","Hello World!");
     writeHTMLtoFile("finances.html","http://finance.yahoo.com/stock-center/");
 
+#ifdef __WIN32 || __WIN64
     system("cls");
+#endif
 
+#ifdef __linux__
+    system("clear");
+#endif
     for (int x = 0;x <20 ; x++){
         if(x == 0){
                 for (int y = 0; y< 20; y++){
