@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1450027556 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
+1450057905 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
 	"../Includes/Global.h"
 	"../Includes/PA_threading.h"
 	"../Includes/PA_util.h"
-	"../Includes/PA_adt.h"
+	"../Includes/pa_adt.h"
 	"../Deps/curl/include/curl/curl.h"
 
 1449370510 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\global.h
@@ -26,7 +26,7 @@
 	<pthread.h>
 	<windows.h>
 
-1449366315 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_util.h
+1450217559 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_util.h
 	<stdio.h>
 
 1449370698 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\net\pa_server.c
@@ -58,8 +58,9 @@
 	"../../Includes/Global.h"
 	<pthread.h>
 
-1450024027 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_util.c
+1450218326 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_util.c
 	"../../Includes/PA_util.h"
+	<unistd.h>
 
 1419773765 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\deps\curl\include\curl\curl.h
 	"curlver.h"

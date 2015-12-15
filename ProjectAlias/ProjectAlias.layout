@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug_linux" />
-	<File name="ProjectAlias/Includes/PA_device.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="46" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Source/Utility/PA_threading.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="231" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Includes/PA_threading.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="112" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Includes/PA_algo.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="304" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Source/Net/PA_server.c" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="401" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Source/System/pa_adt.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="28" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="ProjectAlias/Includes/PA_server.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="Debug_Win" />
+	<File name="ProjectAlias\Includes\PA_server.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="186" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Includes/PA_observe.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Includes\PA_device.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="237" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Source/main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Includes\PA_util.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="369" topLine="65" />
+			<Cursor1 position="62" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Includes/PA_util.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Includes\Global.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="963" topLine="0" />
+			<Cursor1 position="451" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Includes/pa_adt.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Includes\PA_algo.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="304" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Includes\pa_adt.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="38" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Source/Utility/PA_algo.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Includes\PA_threading.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="112" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Source\Net\PA_server.c" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="401" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Source\System\PA_device.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="41" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Includes\PA_observe.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Source\Utility\PA_algo.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="292" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Source/Utility/PA_util.c" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Source\System\pa_adt.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="698" topLine="3" />
+			<Cursor1 position="28" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Source/System/PA_device.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Source\Utility\PA_threading.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="80" topLine="0" />
+			<Cursor1 position="231" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="ProjectAlias/Includes/Global.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="ProjectAlias\Source\Utility\PA_util.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="451" topLine="0" />
+			<Cursor1 position="4301" topLine="218" />
+		</Cursor>
+	</File>
+	<File name="ProjectAlias\Source\main.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="306" topLine="42" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

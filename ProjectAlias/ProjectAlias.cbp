@@ -69,12 +69,12 @@
 		</Compiler>
 		<Linker>
 			<Add option="-static" />
-			<Add library="ProjectAlias/Deps/curl/lib64/libz.a" />
-			<Add library="ProjectAlias/Deps/curl/lib64/libssl.a" />
-			<Add library="ProjectAlias/Deps/curl/lib64/libssh2.a" />
-			<Add library="ProjectAlias/Deps/curl/lib64/librtmp.a" />
-			<Add library="ProjectAlias/Deps/curl/lib64/libcurl.a" />
-			<Add library="ProjectAlias/Deps/curl/lib64/libcrypto.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\libz.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\libssl.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\libssh2.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\librtmp.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\libcurl.a" />
+			<Add library="ProjectAlias\Deps\curl\lib64\libcrypto.a" />
 			<Add directory="ProjectAlias/Deps/curl-7.40.0-devel-mingw64/lib64" />
 		</Linker>
 		<Unit filename="ProjectAlias/Deps/curl/include/config-win32.h" />

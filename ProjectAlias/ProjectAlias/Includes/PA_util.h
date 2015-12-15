@@ -26,5 +26,20 @@ const char* PA_UTIL_EndianessToString(endianess e);
 architecture PA_UTIL_detectArchitecture();
 const char* PA_UTIL_ArchitectureToString(architecture a);
 
+//Custom memory allocation functions and structures
+
+void *managedMemoryStart;
+void *lastValidAddress;
+int hasInitialized = 0;
+
+struct memoryControlledBlock{
+    int isAvailable;
+    int size;
+};
+
+void cmalloc_init();
+void *cmalloc(long numBytes);
+void cfree(void *firstByte);
+
 
 #endif PA_UTIL_H_

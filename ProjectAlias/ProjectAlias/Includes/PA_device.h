@@ -11,7 +11,7 @@ typedef struct PA_USRDVC{
 
 }PA_USRDVC;
 
-void initCurrentDevice(PA_USRDVC *device);
+void initCurrDevice(PA_USRDVC *device);
 void createToString(PA_USRDVC *device);
 
 

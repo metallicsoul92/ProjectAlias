@@ -1,6 +1,6 @@
 #include "../../Includes/PA_util.h"
 
-
+#include <unistd.h>
 const char *FilesFP  = "././ProjectAlias/Files/";
 
 
@@ -215,4 +215,59 @@ break;
 
 }
 }
+
+
+void cmalloc_init(){
+    lastValidAddress = sbrk(0);
+    managedMemoryStart = lastValidAddress;
+    hasInitialized = 1;
+}
+void *cmalloc(long numBytes){
+    void *currLocation;
+    struct memoryControlledBlock *currLocationMCB;
+    void *memoryLocation;
+
+    if(!hasInitialized){
+        cmalloc_init();
+    }
+
+    numBytes = numBytes + sizeof(struct memoryControlledBlock);
+
+    memoryLocation = 0;
+
+    currLocation = managedMemoryStart;
+
+    while(currLocation != lastValidAddress){
+        currLocationMCB = (struct memoryControlledBlock*)currLocation;
+
+        if(currLocationMCB->isAvailable){
+            if(currLocationMCB->size >=numBytes){
+                currLocationMCB->isAvailable = 0;
+                memoryLocation = currLocation;
+                break;
+            }
+        }
+
+        currLocation = currLocation + currLocationMCB->size;
+    }
+
+    if(!memoryLocation){
+        sbrk(numBytes);
+        memoryLocation = lastValidAddress;
+        lastValidAddress = lastValidAddress + numBytes;
+        currLocationMCB = memoryLocation;
+        currLocationMCB->isAvailable = 0;
+        currLocationMCB->size = numBytes;
+    }
+    memoryLocation = memoryLocation + sizeof(struct memoryControlledBlock);
+    return memoryLocation;
+
+}
+void cfree(void *firstByte){
+    struct memoryControlledBlock *mcb;
+    mcb = firstByte - sizeof(struct memoryControlledBlock);
+    mcb->isAvailable = 1;
+    return;
+}
+
 
