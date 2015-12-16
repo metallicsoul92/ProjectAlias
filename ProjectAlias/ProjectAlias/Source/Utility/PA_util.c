@@ -4,6 +4,15 @@
 const char *FilesFP  = "././ProjectAlias/Files/";
 
 
+#ifdef __linux__
+//for custom memory allocation
+void *managedMemoryStart;
+void *lastValidAddress;
+int isInit = 0;
+
+#endif //linux features
+
+
 platform PA_UTIL_detectPlatform()
 {
 #if defined(_WIN32) || defined(_WIN64)
@@ -220,14 +229,14 @@ break;
 void cmalloc_init(){
     lastValidAddress = sbrk(0);
     managedMemoryStart = lastValidAddress;
-    hasInitialized = 1;
+    isInit = 1;
 }
 void *cmalloc(long numBytes){
     void *currLocation;
     struct memoryControlledBlock *currLocationMCB;
     void *memoryLocation;
 
-    if(!hasInitialized){
+    if(!isInit){
         cmalloc_init();
     }
 

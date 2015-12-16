@@ -11,6 +11,9 @@ void printHello(){
 
 int main(void)
 {
+
+
+
     PA_ADT_tuplei tup;
     tup = newTuplei(5,4);
     printf("%d,%d\n",tup.data1,tup.data2);
@@ -85,9 +88,14 @@ int main(void)
 
 	printf("Float passing through void passing through float :) %2.3f\n", *temp2p);
 
-
 	getchar();
-
+    printf("beginning sequence with new custom memory allocation");
+    cmalloc_init();
+    char *stringTest = cmalloc(500);
+    strcpy(stringTest,"Hello World From Cmalloc\'d string");
+    printf("%s",stringTest);
+    cfree(stringTest);
+    getchar();
 
 	return 0;
 }

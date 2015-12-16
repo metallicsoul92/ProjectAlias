@@ -28,9 +28,7 @@ const char* PA_UTIL_ArchitectureToString(architecture a);
 
 //Custom memory allocation functions and structures
 
-void *managedMemoryStart;
-void *lastValidAddress;
-int hasInitialized = 0;
+
 
 struct memoryControlledBlock{
     int isAvailable;

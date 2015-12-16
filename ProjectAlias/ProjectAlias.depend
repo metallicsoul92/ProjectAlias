@@ -96,14 +96,14 @@
 
 1415105476 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\deps\curl\include\curl\typecheck-gcc.h
 
-1450051316 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
+1450221748 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/main.c
 	"../Includes/Global.h"
 	"../Includes/PA_threading.h"
 	"../Includes/PA_util.h"
 	"../Includes/pa_adt.h"
 	"../Deps/curl/include/curl/curl.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/Global.h
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
@@ -119,14 +119,14 @@
 	<windows.h>
 	<winsock2.h>
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_threading.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_threading.h
 	<pthread.h>
 	<windows.h>
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_util.h
+1450222962 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_util.h
 	<stdio.h>
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curl.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curl.h
 	"curlver.h"
 	"curlbuild.h"
 	"curlrules.h"
@@ -145,50 +145,52 @@
 	"multi.h"
 	"typecheck-gcc.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlver.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlver.h
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlbuild.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlbuild.h
 	<sys/types.h>
 	<sys/socket.h>
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlrules.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/curlrules.h
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/easy.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/easy.h
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/multi.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/multi.h
 	"curl.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/typecheck-gcc.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Deps/curl/include/curl/typecheck-gcc.h
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Net/PA_server.c
+1450221748 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Net/PA_server.c
 	"../../Includes/PA_server.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_server.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_server.h
 	"Global.h"
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/pa_adt.c
+1450221748 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/pa_adt.c
 	"../Includes/pa_adt.h"
 	"../Includes/Global.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/pa_adt.h
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/PA_device.c
+1450222877 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/System/PA_device.c
 	"../../Includes/PA_device.h"
-
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_device.h
 	"../Includes/PA_util.h"
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_algo.c
+1450222993 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_device.h
+	"PA_util.h"
+
+1450221748 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_algo.c
 	"../../Includes/PA_algo.h"
 
-1450050933 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_algo.h
+1450221748 /home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Includes/PA_algo.h
 	"Global.h"
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_threading.c
+1450221748 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_threading.c
 	"../../Includes/PA_threading.h"
 	"../../Includes/Global.h"
 	<pthread.h>
 
-1450050933 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
+1450222962 source:/home/climjark/ProjectAlias/ProjectAlias/ProjectAlias/Source/Utility/PA_util.c
 	"../../Includes/PA_util.h"
+	<unistd.h>
 

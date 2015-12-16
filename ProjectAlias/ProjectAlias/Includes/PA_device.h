@@ -1,7 +1,7 @@
 #ifndef PA_DEVICE_H_
 #define PA_DEVICE_H_
 
-#include "../Includes/PA_util.h"
+#include "PA_util.h"
 //User Device
 typedef struct PA_USRDVC{
     platform p;
