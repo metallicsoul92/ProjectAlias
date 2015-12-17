@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1450057905 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
+1450236821 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
 	"../Includes/Global.h"
 	"../Includes/PA_threading.h"
 	"../Includes/PA_util.h"
@@ -26,7 +26,7 @@
 	<pthread.h>
 	<windows.h>
 
-1450217559 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_util.h
+1450236809 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_util.h
 	<stdio.h>
 
 1449370698 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\net\pa_server.c
@@ -41,11 +41,12 @@
 
 1449615711 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_adt.h
 
-1447991159 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\system\pa_device.c
+1450224568 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\system\pa_device.c
 	"../../Includes/PA_device.h"
-
-1448854493 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_device.h
 	"../Includes/PA_util.h"
+
+1450224568 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\pa_device.h
+	"PA_util.h"
 
 1449369421 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_algo.c
 	"../../Includes/PA_algo.h"
@@ -58,9 +59,10 @@
 	"../../Includes/Global.h"
 	<pthread.h>
 
-1450218326 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_util.c
+1450236836 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\utility\pa_util.c
 	"../../Includes/PA_util.h"
 	<unistd.h>
+	<windows.h>
 
 1419773765 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\deps\curl\include\curl\curl.h
 	"curlver.h"

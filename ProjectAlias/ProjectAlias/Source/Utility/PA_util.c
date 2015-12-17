@@ -8,11 +8,14 @@ const char *FilesFP  = "././ProjectAlias/Files/";
 //for custom memory allocation
 void *managedMemoryStart;
 void *lastValidAddress;
-int isInit = 0;
+
 
 #endif //linux features
-
-
+#if defined(__WIN32__) || (__WIN64__)
+#include <windows.h>
+    HANDLE heapHandle;
+#endif //windows features
+int isInit = 0;
 platform PA_UTIL_detectPlatform()
 {
 #if defined(_WIN32) || defined(_WIN64)
@@ -25,6 +28,10 @@ platform PA_UTIL_detectPlatform()
 	return OS_LINUX;
 #endif
 }
+
+
+
+
 
 const char *PA_UTIL_PlatformToString(platform p)
 {
@@ -227,11 +234,20 @@ break;
 
 
 void cmalloc_init(){
+  #if defined(__linux__)
     lastValidAddress = sbrk(0);
     managedMemoryStart = lastValidAddress;
     isInit = 1;
+#endif
+#if defined(__WIN32__) || (__WIN64__)
+    SYSTEM_INFO *si;
+    GetSystemInfo(si);
+   heapHandle = HeapCreate(0x00040000,si->dwAllocationGranularity,0);
+   isInit = 1;
+#endif // defined
 }
 void *cmalloc(long numBytes){
+   #if defined(__linux)
     void *currLocation;
     struct memoryControlledBlock *currLocationMCB;
     void *memoryLocation;
@@ -271,12 +287,22 @@ void *cmalloc(long numBytes){
     memoryLocation = memoryLocation + sizeof(struct memoryControlledBlock);
     return memoryLocation;
 
+#endif //linux
+#if defined(__WIN32__) || (__WIN64__)
+    return HeapAlloc(heapHandle,HEAP_GENERATE_EXCEPTIONS,numBytes);
+#endif // defined
 }
 void cfree(void *firstByte){
+      #if defined(__linux)
     struct memoryControlledBlock *mcb;
     mcb = firstByte - sizeof(struct memoryControlledBlock);
     mcb->isAvailable = 1;
     return;
+    #endif //linux
+#if defined(__WIN32__) || (__WIN64__)
+    if(!isInit){
+        cmalloc_init();
+    }
+    HeapFree(heapHandle,0,firstByte);
+#endif // defined
 }
-
-
