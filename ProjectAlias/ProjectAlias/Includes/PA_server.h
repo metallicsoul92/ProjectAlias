@@ -5,21 +5,17 @@
 
 
 
-typedef struct Server{
+typedef struct PA_NET_Server
+{
 
 #ifdef __linux__
-   // struct sockaddr_in m_socketAddress;
-#endif //Linux Defined
+    //This is where the linux information will go
+#endif // __linux__
 
 #ifdef __WIN32 || __WIN64
-    SOCKET s;
-#endif
-	short m_port;
-    int m_sockfd;
-}server;
+    //This is where the windows info will go
+#endif // __WIN32
+}PA_NET_Server;
 
-const char* ServerToString(server* serv);
 
-server *createServer(short port, int sockfd);
 
-#endif // PA_SERVER_H_

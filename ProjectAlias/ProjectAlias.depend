@@ -1,10 +1,9 @@
 # depslib dependency file v1.0
-1450236821 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
+1450484407 source:c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\source\main.c
 	"../Includes/Global.h"
 	"../Includes/PA_threading.h"
 	"../Includes/PA_util.h"
 	"../Includes/pa_adt.h"
-	"../Deps/curl/include/curl/curl.h"
 
 1449370510 c:\users\jimclark\documents\github\projectalias\projectalias\projectalias\includes\global.h
 	<stdio.h>

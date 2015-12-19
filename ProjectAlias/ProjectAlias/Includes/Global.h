@@ -21,9 +21,10 @@
 #include <arpa/inet.h>
 #endif // __linux__
 
-#if _WIN32
+#if _WIN32 || __WIN64
  #include <windows.h>
- #include <winsock2.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
  #pragma comment(lib,"ws2_32.lib") //Winsock Library
 #endif // __WIN32
 // user-created header files

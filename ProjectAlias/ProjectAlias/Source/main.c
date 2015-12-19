@@ -2,7 +2,7 @@
 #include "../Includes/PA_threading.h"
 #include "../Includes/PA_util.h"
 #include "../Includes/pa_adt.h"
-#include "../Deps/curl/include/curl/curl.h"
+
 
 
 void printHello(){
@@ -13,10 +13,11 @@ int main(void)
 {
 
 
+    Server *s;
 
-    PA_ADT_tuplei tup;
-    tup = newTuplei(5,4);
-    printf("%d,%d\n",tup.data1,tup.data2);
+
+    PA_ADT_tuplei tup2= newTuplei(5,4);
+    printf("%d,%d\n",tup2.data1,tup2.data2);
     printf("C Version: %li\n",__STDC_VERSION__);
     printf("FilePath: %s\n ",printFP());
     createFile("test.txt");
